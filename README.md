@@ -6,10 +6,10 @@
 
 下面列出了每个配置文件的汉化进度：
 
-- [ ] config.yml
-- [×] database.yml
-- [×] townyperms.yml
-- [×] zh-CN.yml
++ [ ] config.yml
+- [ ] database.yml
+- [ ] townyperms.yml
+- [ ] zh-CN.yml
 
 ## 如何贡献
 
