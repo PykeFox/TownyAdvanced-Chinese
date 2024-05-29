@@ -1,48 +1,44 @@
   
 version:
-  # This is the current version of Towny. Please do not edit.
+  # 当前的 Towny 版本，请勿编辑。
   version: 0.100.1.0
-  # This is for showing the changelog on updates. Please do not edit.
+  # 用于在更新时显示变更日志，请勿编辑。
   last_run_version: 0.100.1.0
   
 language:
-  # The language file you wish to use for your default locale. Your default locale is what
-  # will be shown in your console and for any player who doesn't use one of the locales below.
-  # Available languages: bg-BG.yml, cz-CZ.yml, da-DK.yml, de-DE.yml, en-US.yml,
+  # 您希望用于默认语言环境的语言文件。
+  # 默认语言环境将显示在您的控制台上以及任何不使用下面列出的语言环境的玩家。
+  # 可用语言：bg-BG.yml, cz-CZ.yml, da-DK.yml, de-DE.yml, en-US.yml,
   # es-AR.yml, es-CL.yml, es-EC.yml, es-ES.yml, es-MX.yml, es-UY.yml, es-VE.yml,
   # fr-FR.yml, he-IL.yml, id-ID.yml, it-IT.yml, ja-JP.yml, ko-KR.yml, nl-NL.yml,
   # no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml, ru-RU.yml, sr-CS.yml,
   # sv-SE.yml, th-TH.yml, tl-PH.yml, tr-TR.yml, uk-UA.yml, vi-VN.yml, zh-CN.yml,
   # zh-TW.yml
   #
-  # If you want to override any of the files above with your own translations you must:
-  # - Copy the file from the towny\settings\lang\reference\ folder 
-  #   into the lang\override\ folder and do your edits to that file.
-  # If you want to override ALL locales, to change colouring for instance, you must:
-  # - Copy the language strings you want to override into 
-  #   the towny\settings\lang\global.yml file.
+  # 如果要用自己的翻译覆盖上述任何文件，则必须：
+  # - 将文件从 towny\settings\lang\reference\ 文件夹复制到 lang\override\ 文件夹，并对该文件进行编辑。
+  # 如果要覆盖所有语言环境，例如更改颜色，您必须：
+  # - 将要覆盖的语言字符串复制到 towny\settings\lang\global.yml 文件中。
   #
-  # Your players will select what locale that Towny shows them 
-  # by changing their Minecraft client's locale.
+  # 您的玩家将通过更改其 Minecraft 客户端的语言环境来选择 Towny 显示给他们的语言环境。
   language: en-US.yml
   
-  # The languages you wish to have enabled. Set to '*' to use all available languages.
-  # If you would like to only allow 4 languages use: en-US,ru-RU,es-ES,fr-FR
-  # If a player's locale isn't enabled or isn't available it will use the language above instead.
-  # For compatibility reasons, en-US will always be considered enabled.
+  # 您希望启用的语言环境。设置为 '*' 以使用所有可用的语言。
+  # 如果只想允许 4 种语言使用：en-US,ru-RU,es-ES,fr-FR
+  # 如果玩家的语言环境未启用或不可用，则将使用上面的语言。
+  # 由于兼容性原因，en-US 将始终被视为已启用。
   enabled_languages: '*'
   
   
 ############################################################
 # +------------------------------------------------------+ #
-# |         A Note on Permission Nodes and Towny         | #
+# |              权限节点和 Towny 的说明笔记               | #
 # +------------------------------------------------------+ #
 #                                                          #
-# For a full list of permission nodes and instructions     #
-# about TownyPerms visit: https://git.io/JUBLd             #
-# Many admins neglect to read the opening paragraphs of    #
-# this wiki page and end up asking questions the wiki      #
-# already answers!                                         #
+# 关于权限节点和 TownyPerms 的完整列表和说明，                #
+# 请访问：https://git.io/JUBLd                              #
+# 许多管理员忽略阅读此 wiki 页面的开头段落，                  #
+# 最终提出了该 wiki 已经回答的问题！                         #
 #                                                          #
 ############################################################
 permissions: ''
@@ -50,13 +46,13 @@ permissions: ''
   
 ############################################################
 # +------------------------------------------------------+ #
-# |                Town and Nation levels                | #
+# |                    城镇和国家级别                     | #
 # +------------------------------------------------------+ #
 ############################################################
   
 levels:
   
-  # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
+  # 配置指南: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   town_level:
   - townBlockTypeLimits: {}
     upkeepModifier: 1.0
@@ -185,7 +181,7 @@ levels:
     townBlockLimit: 448
     resourceProductionModifier: 1.0
   
-  # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
+  # 配置指南: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   nation_level:
   - kingPostfix: ''
     capitalPostfix: ''
@@ -275,909 +271,869 @@ levels:
   
 ############################################################
 # +------------------------------------------------------+ #
-# |                   New Town Defaults                  | #
+# |                   新城镇默认设置                      | #
 # +------------------------------------------------------+ #
 ############################################################
   
 town:
   
-  # Default public status of the town (used for /town spawn)
+  # 城镇的默认公开状态（用于 /town spawn）
   default_public: 'true'
   
-  # Default Open status of the town (are new towns open and joinable by anyone at creation?)
+  # 城镇的默认开放状态（新城镇在创建时是否开放并可加入？）
   default_open: 'false'
   
-  # Default neutral status of the town (are new towns neutral by default?)
+  # 城镇的默认中立状态（新城镇是否默认中立？）
   default_neutral: 'false'
   
-  # Default status of new towns, (are they allowed to have a war/battle?)
-  # This setting is not used internally by Towny. It is available for war/battle plugins to use.
-  # Setting this false should mean your town cannot be involved in a war supplied by another plugin.
+  # 新城镇的默认状态，（是否允许它们参与战争/战斗？）
+  # 此设置 Towny 内部不使用。它可供战争/战斗插件使用。
+  # 将此设置为 false 应意味着您的城镇不能参与由其他插件提供的战争。
   default_allowed_to_war: 'true'
   
-  # Default town board
+  # 默认城镇留言板
   default_board: /town set board [msg]
   
-  # Setting this to true will set a town's tag automatically using the first four characters of the town's name.
+  # 将此设置为 true 将自动使用城镇名称的前四个字符来设置城镇的标签。
   set_tag_automatically: 'false'
   
-  # Default tax settings for new towns.
+  # 新城镇的默认税收设置。
   default_taxes:
   
-    # Default amount of tax of a new town. This must be lower than the economy.daily_taxes.max_town_tax_amount setting.
+    # 新城镇的默认税收金额。必须低于 economy.daily_taxes.max_town_tax_amount 设置。
     tax: '0.0'
   
-    # Default amount of shop tax of a new town.
+    # 新城镇的默认商店税收金额。
     shop_tax: '0.0'
   
-    # Default amount of embassy tax of a new town.
+    # 新城镇的默认大使馆税收金额。
     embassy_tax: '0.0'
   
-    # Default amount for town's plottax costs.
+    # 新城镇的地块税默认金额。
     plot_tax: '0.0'
   
-    # Does a player's plot get put up for sale if they are unable to pay the plot tax?
-    # When false the plot becomes town land and must be set up for-sale by town mayor or staff.
+    # 如果玩家无法支付地块税，他们的地块是否会被出售？
+    # 当为 false 时，地块变为城镇土地，必须由城镇市长或工作人员设置为待售。
     does_non-payment_place_plot_for_sale: 'false'
   
-    # Default status of new town's taxpercentage. True means that the default_tax is treated as a percentage instead of a fixed amount.
+    # 新城镇的默认税收百分比状态。True 意味着默认税收被视为百分比而不是固定金额。
     taxpercentage: 'true'
   
-    # A required minimum tax amount for the default_tax, will not change any towns which already have a tax set.
-    # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
-    # This setting has no effect when negative taxes are allowed.
+    # 默认税收的最低要求税收金额，不会更改已经设置了税收的城镇。
+    # 不要忘记将默认税收设置为大于 0，否则新城镇仍将以零税收开始。
+    # 当允许负税时，此设置无效。
     minimumtax: '0.0'
-  
-  
+
 ############################################################
 # +------------------------------------------------------+ #
-# |               New Nation Defaults                    | #
+# |                   新国家默认设置                      | #
 # +------------------------------------------------------+ #
 ############################################################
   
 nation:
   
-  # If set to true, any newly made nation will have their spawn set to public.
+  # 如果设置为 true，任何新创建的国家的生成点将被设置为公开。
   default_public: 'false'
   
-  # If set to true, any newly made nation will have open status and any town may join without an invite.
+  # 如果设置为 true，任何新创建的国家将具有开放状态，任何城镇都可以加入而无需邀请。
   default_open: 'false'
   
-  # Default nation board
+  # 默认国家留言板
   default_board: /nation set board [msg]
   
-  # Setting this to true will set a nation's tag automatically using the first four characters of the nation's name.
+  # 将此设置为 true 将自动使用国家名称的前四个字符来设置国家的标签。
   set_tag_automatically: 'false'
   
-  # Default tax settings for new nations.
+  # 新国家的默认税收设置。
   default_taxes:
   
-    # Default amount of tax of a new nation. This must be lower than the economy.daily_taxes.max_nation_tax_amount setting.
+    # 新国家的默认税收金额。必须低于 economy.daily_taxes.max_nation_tax_amount 设置。
     tax: '0.0'
   
-    # Default status of new nation's taxpercentage. True means that the default_tax is treated as a percentage instead of a fixed amount.
+    # 新国家的默认税收百分比状态。True 意味着默认税收被视为百分比而不是固定金额。
     taxpercentage: 'false'
   
-    # A required minimum tax amount for the default_tax, will not change any nations which already have a tax set.
-    # Do not forget to set the default_tax to more than 0 or new nations will still begin with a tax of zero.
-    # This setting has no effect when negative taxes are allowed.
+    # 默认税收的最低要求税收金额，不会更改已经设置了税收的国家。
+    # 不要忘记将默认税收设置为大于 0，否则新国家仍将以零税收开始。
+    # 当允许负税时，此设置无效。
     minimumtax: '0.0'
   
-    # The default amount of money that nations will charge their conquered towns.
+    # 国家对征服的城镇收取的默认金额。
     default_nation_conquered_tax: '0'
   
-    # The maximum amount of money that can be charge by a nation on their conquered towns.
+    # 国家对其征服的城镇收取的最大金额。
     max_nation_conquered_tax: '100'
-  
-  
+
 ############################################################
 # +------------------------------------------------------+ #
-# |             Default new world settings               | #
+# |             默认新世界设置                          | #
 # +------------------------------------------------------+ #
 #                                                          #
-#   These flags are only used at the initial setup of a    #
-#   new world! When you first start Towny these settings   #
-#   were applied to any world that already existed.        #
-#   Many of these settings can be turned on and off in     #
-#   their respective worlds using the /tw toggle command.  #
-#   Settings are saved in the towny\data\worlds\ folder.   #
+#   这些标志仅在新世界的初始设置中使用！当您首次启动Towny时，这些设置将应用于任何已经存在的世界。   #
+#   许多这些设置可以通过各自的世界使用/tw toggle命令打开和关闭。                         #
+#   设置保存在towny\data\worlds\文件夹中。               #
 #                                                          #
 ############################################################
   
 new_world_settings:
-  # Do new worlds have Towny enabled by default?
-  # You can adjust this setting for an existing world using /townyworld toggle usingtowny
+  
+  # 新世界是否默认启用Towny？
+  # 您可以使用/townyworld toggle usingtowny命令调整现有世界的此设置。
   using_towny: 'true'
   
-  # Are new worlds claimable by default?
-  # Setting this to false means that Towny will still be active but no land can be claimed by towns.
-  # You can adjust this setting for an existing world using /townyworld toggle claimable
+  # 新世界是否默认可声明？
+  # 将此设置为false意味着Towny仍然处于活动状态，但城镇不能声明土地。
+  # 您可以使用/townyworld toggle claimable命令调整现有世界的此设置。
   are_new_world_claimable: 'true'
   
   pvp:
-    # Do new worlds have pvp enabled by default?
-    # You can adjust this setting for an existing world using /townyworld toggle pvp
+    # 新世界是否默认启用pvp？
+    # 您可以使用/townyworld toggle pvp命令调整现有世界的此设置。
     world_pvp: 'true'
   
-    # Do new worlds have pvp forced on by default?
-    # This setting overrides a towns' setting.
-    # You can adjust this setting for an existing world using /townyworld toggle forcepvp
+    # 新世界是否默认强制启用pvp？
+    # 此设置覆盖城镇的设置。
+    # 您可以使用/townyworld toggle forcepvp命令调整现有世界的此设置。
     force_pvp_on: 'false'
   
-    # Do new world have friendly fire enabled by default?
-    # Does not affect Arena Plots which have FF enabled all the time.
-    # When true players on the same town or nation will harm each other.
-    # You can adjust this setting for an existing world using /townyworld toggle friendlyfire
+    # 新世界是否默认启用友好火？
+    # 不影响始终启用友好火的竞技场。
+    # 当为true时，同一城镇或国家的玩家将互相伤害。
+    # 您可以使用/townyworld toggle friendlyfire命令调整现有世界的此设置。
     friendly_fire_enabled: 'false'
   
-    # Do new worlds have their war_allowed enabled by default?
-    # You can adjust this setting for an existing world using /townyworld toggle warallowed
+    # 新世界是否默认启用战争？
+    # 您可以使用/townyworld toggle warallowed命令调整现有世界的此设置。
     war_allowed: 'true'
   
   mobs:
-    # Do new worlds have world_monsters_on enabled by default?
-    # You can adjust this setting for an existing world using /townyworld toggle worldmobs
+    # 新世界是否默认启用世界怪物？
+    # 您可以使用/townyworld toggle worldmobs命令调整现有世界的此设置。
     world_monsters_on: 'true'
   
-    # Do new worlds have wilderness_monsters_on enabled by default?
-    # You can adjust this setting for an existing world using /townyworld toggle wildernessmobs
+    # 新世界是否默认启用荒野怪物？
+    # 您可以使用/townyworld toggle wildernessmobs命令调整现有世界的此设置。
     wilderness_monsters_on: 'true'
   
-    # Do new worlds have force_town_monsters_on enabled by default?
-    # This setting overrides a towns' setting.
-    # You can adjust this setting for an existing world using /townyworld toggle townmobs
+    # 新世界是否默认强制启用城镇怪物？
+    # 此设置覆盖城镇的设置。
+    # 您可以使用/townyworld toggle townmobs命令调整现有世界的此设置。
     force_town_monsters_on: 'false'
   
   explosions:
-    # Do new worlds have explosions enabled by default?
-    # You can adjust this setting for an existing world using /townyworld toggle explosion
+    # 新世界是否默认启用爆炸？
+    # 您可以使用/townyworld toggle explosion命令调整现有世界的此设置。
     world_explosions_enabled: 'true'
   
-    # Do new worlds have force_explosions_on enabled by default.
-    # This setting overrides a towns' setting, preventing them from turning explosions off in their town.
-    # You can adjust this setting for an existing world using /townyworld toggle forceexplosion
+    # 新世界是否默认强制启用爆炸？
+    # 此设置覆盖城镇的设置，阻止它们在城镇中关闭爆炸。
+    # 您可以使用/townyworld toggle forceexplosion命令调整现有世界的此设置。
     force_explosions_on: 'false'
   
   fire:
-    # Do new worlds allow fire to be lit and spread by default?
-    # You can adjust this setting for an existing world using /townyworld toggle fire
+    # 新世界是否允许默认点燃和传播火？
+    # 您可以使用/townyworld toggle fire命令调整现有世界的此设置。
     world_firespread_enabled: 'true'
   
-    # Do new worlds have force_fire_on enabled by default?
-    # This setting overrides a towns' setting.
-    # You can adjust this setting for an existing world using /townyworld toggle forcefire
+    # 新世界是否默认强制启用火？
+    # 此设置覆盖城镇的设置。
+    # 您可以使用/townyworld toggle forcefire命令调整现有世界的此设置。
     force_fire_on: 'false'
   
-  # Do new worlds prevent Endermen from picking up and placing blocks, by default?
+  # 新世界是否默认阻止末影人拾取和放置方块？
   enderman_protect: 'true'
   
-  # Do new worlds disable creatures trampling crops, by default?
+  # 新世界是否默认禁用生物践踏作物？
   disable_creature_crop_trampling: 'true'
   
-  # World management settings to deal with un/claiming plots
+  # 处理未/声明地块的世界管理设置
   plot_management:
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     block_delete:
   
-      # You can adjust this setting for an existing world using /townyworld toggle unclaimblockdelete
+      # 您可以使用/townyworld toggle unclaimblockdelete命令调整现有世界的此设置。
       enabled: 'true'
   
-      # These items will be deleted upon a plot being unclaimed
+      # 在地块被撤销时，这些物品将被删除
       unclaim_delete: BEDS,TORCHES,REDSTONE_WIRE,SIGNS,DOORS,PRESSURE_PLATES
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     entity_delete:
       enabled: 'false'
   
-      # These entities will be deleted upon a plot being unclaimed.
-      # Valid EntityTypes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+      # 在地块被撤销时，这些实体将被删除。
+      # 有效的实体类型可以在此找到：https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
       unclaim_delete: end_crystal
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     mayor_plotblock_delete:
   
-      # You can adjust this setting for an existing world using /townyworld toggle plotcleardelete
+      # 您可以使用/townyworld toggle plotcleardelete命令调整现有世界的此设置。
       enabled: 'true'
   
-      # These items will be deleted upon a mayor using /plot clear
-      # To disable deleting replace the current entries with NONE.
+      # 当市长使用/plot clear时，这些物品将被删除。
+      # 若要禁用删除，请用NONE替换当前条目。
       mayor_plot_delete: SIGNS
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     revert_on_unclaim:
-      # *** WARNING***
-      # If this is enabled any town plots which become unclaimed will
-      # slowly be reverted to a snapshot taken before the plot was claimed.
+      # *** 警告***
+      # 如果启用此功能，任何变成未声明的城镇地块
+      # 将慢慢恢复到在地块被声明之前拍摄的快
       #
-      # Regeneration will only work if the plot was claimed
-      # with this feature enabled.
+      # 恢复只有当地块被声明时才能正常工作。
       #
-      # You can adjust this setting for an existing world using /townyworld toggle revertunclaim
+      # 您可以使用/townyworld toggle revertunclaim命令调整现有世界的此设置。
       #
-      # Unlike the rest of this config section, the speed setting is not
-      # set per-world. What you set for speed will be used in all worlds.
+      # 与此配置部分的其他内容不同，速度设置不是
+      # 针对每个世界设置的。您设置的速度将用于所有世界。
       #
-      # If you allow players to break/build in the wild the snapshot will
-      # include any changes made before the plot was claimed.
+      # 如果允许玩家在野外破坏/建造，则快照将
+      # 包含在地块被声明之前进行的任何更改。
       enabled: 'true'
       speed: 1s
   
-      # These block types will NOT be regenerated by the revert-on-unclaim
-      # or revert-explosion features.
+      # 这些块类型不会被恢复到未声明时
+      # 或回滚爆炸功能。
       block_ignore: ORES,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,DIAMOND_BLOCK,EMERALD_BLOCK,NETHERITE_BLOCK,MOSSY_COBBLESTONE,TORCHES,SPAWNER,SIGNS,SHULKER_BOXES,BEACON,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,SKULLS,DRAGON_EGG,CRYING_OBSIDIAN,MOVING_PISTON
   
-      # The list of blocks that are allowed to regenerate, if this list is empty then all blocks will regenerate.
-      # This list is useful for when you want only 'natural' blocks to regenerate like stone, grass, trees, etc.,
-      # useful when you allow players to build/destroy in the wilderness.
-      # Like other options in the new_world_settings section, this is only applied as a default setting for new worlds.
-      # Configure the list found in the towny\data\worlds\WORLDNAME.txt files.
+      # 允许恢复的块列表。（如果为空，则所有块都将恢复）
+      # 此列表对于仅恢复“自然”块（如石头、草、树木等）非常有用，
+      # 当您允许玩家在野外建造/破坏时很有用。
+      # 与new_world_settings部分中的其他选项一样，此选项仅用作新世界的默认设置。
+      # 在towny\data\worlds\WORLDNAME.txt文件中配置列表。
       block_whitelist: ''
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     wild_revert_on_mob_explosion:
   
-      # Enabling this will slowly regenerate holes created in the wilderness by monsters exploding.
-      # You can adjust this setting for an existing world using /townyworld toggle revertentityexpl
+      # 启用此功能将会慢慢恢复在野外被怪物爆炸创建的洞。
+      # 您可以使用/townyworld toggle revertentityexpl命令调整现有世界的此设置。
       enabled: 'true'
   
-      # The list of entities whose explosions should be reverted.
+      # 应该恢复其爆炸的实体列表。
       entities: CREEPER,END_CRYSTAL,ENDER_DRAGON,FIREBALL,SMALL_FIREBALL,TNT,TNT_MINECART,WITHER,WITHER_SKULL
   
-      # How long before an entity-caused explosion begins reverting.
+      # 多久后开始恢复由实体引起的爆炸。
       delay: 20s
   
-    # This section is applied to new worlds as default settings when new worlds are detected.
+    # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     wild_revert_on_block_explosion:
   
-      # Enabling this will slowly regenerate holes created in the wilderness by exploding blocks like beds.
-      # You can adjust this setting for an existing world using /townyworld toggle revertblockexpl
+      # 启用此功能将会慢慢恢复在野外通过爆炸块（如床）创建的洞。
+      # 您可以使用/townyworld toggle revertblockexpl命令调整现有世界的此设置。
       enabled: 'true'
   
-      # The list of blocks whose explosions should be reverted.
+      # 应该恢复其爆炸的块列表。
       blocks: BEDS,RESPAWN_ANCHOR
-    # The list of blocks to regenerate. (if empty all blocks will regenerate)
+    # 应该恢复的块列表。（如果为空，则所有块都将恢复）
     wild_revert_on_explosion_block_whitelist: ''
-  
-  
-############################################################
-# +------------------------------------------------------+ #
-# |                Global town settings                  | #
-# +------------------------------------------------------+ #
-############################################################
-  
+
+# 全局城镇设置
 global_town_settings:
-  
-  # Maximum number of towns allowed on the server.
+
+  # 服务器允许的最大城镇数量。
   town_limit: '3000'
-  
-  # The maximum distance (in townblocks) that 2 town's homeblocks can be to be eligible for merging.
+
+  # 两个城镇的家点之间的最大距离（以城镇块计）以进行合并。
   max_distance_for_merge: '10'
-  
-  # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
+
+  # 在城镇或联盟城镇内的玩家将在每个health_regen_speed秒后恢复半颗心。
   health_regen:
     speed: 3s
     enable: 'true'
-  
-  # Number of seconds that must pass before pvp can be toggled by a town.
-  # Applies to residents of the town using /res toggle pvp, as well as
-  # plots having their PVP toggled using /plot toggle pvp.
+
+  # 必须经过的秒数，城镇才能切换pvp。
+  # 适用于使用/res toggle pvp切换城镇居民，以及使用/plot toggle pvp切换地块的pvp。
   pvp_cooldown_time: '30'
-  
-  # Number of seconds that must pass before peacfulness can be toggled by a town or nation.
+
+  # 必须经过的秒数，城镇或国家才能切换和平状态。
   peaceful_cooldown_time: '30'
-  
-  # Number of seconds that must pass before a player that has deleted their town can create a new one.
+
+  # 删除其城镇后，玩家必须等待的秒数才能创建新城镇。
   town_delete_cooldown_time: '0'
-  
-  # Number of seconds that must pass before a town that has unclaimed a townblock can claim it again.
+
+  # 解除声明城镇块后，城镇必须等待的秒数才能再次声明。
   town_unclaim_cooldown_time: '0'
-  
-  # When set above 0, the amount of hours a town must wait after setting their homeblock, in order to move it again.
+
+  # 当设置大于0时，城镇必须等待的小时数才能再次移动其家点。
   homeblock_movement_cooldown_hours: '0'
-  
-  # When set above 0, the furthest number of townblocks a homeblock can be moved by.
-  # Example: setting it to 3 would mean the player can only move their homeblock over by 3 townblocks at a time.
-  # Useful when used with the above homeblock_movement_cooldown_hours setting.
+
+  # 当设置大于0时，家点可以移动的最远城镇块数。
+  # 示例：将其设置为3意味着玩家一次只能将家点移动3个城镇块。
+  # 与上述homeblock_movement_cooldown_hours设置一起使用时非常有用。
   homeblock_movement_distance_limit: '0'
-  
-  # Enables the [~Home] TownName - PlotOwner - PlotName message line..
-  # If false players will not be shown any notifications when they move in and out of towns, between plots.
+
+  # 启用[~Home] TownName - PlotOwner - PlotName消息行。
+  # 如果设置为false，玩家在城镇内、地块之间移动时将不会收到任何通知。
   show_town_notifications: 'true'
-  
-  # Can outlaws roam freely on the towns they are outlawed in?
-  # If false, outlaws will be teleported away if they spend too long in the towns they are outlawed in.
-  # The time is set below in the outlaw_teleport_warmup.
+
+  # 在被城镇宣战的城镇中，罪犯是否可以自由漫游？
+  # 如果为false，则如果罪犯在其宣战的城镇中逗留时间过长，他们将被传送走。
+  # 传送时间在下面的outlaw_teleport_warmup中设置。
   allow_outlaws_to_enter_town: 'true'
-  
-  # Can outlaws freely teleport out of the towns they are outlawed in?
-  # If false, outlaws cannot use commands to teleport out of town.
-  # If you want outlaws to not be able to use teleporting items as well, use allow_outlaws_use_teleport_items.
+
+  # 在被城镇宣战的城镇中，罪犯是否可以自由传送？
+  # 如果为false，则罪犯无法使用命令传送离开城镇。
+  # 如果您希望罪犯无法使用传送物品，例如：末影珍珠和歌诗图果，请使用allow_outlaws_use_teleport_items。
   allow_outlaws_to_teleport_out_of_town: 'true'
-  
-  # If false, outlawed players in towns cannot use items that teleport the player, ie: Ender Pearls & Chorus Fruit.
-  # Setting this to false requires allow_outlaws_to_teleport_out_of_town to also be false.
+
+  # 如果为false，在城镇中被宣战的玩家不能使用传送玩意，例如：末影珍珠和歌诗图果。
+  # 将此设置为false要求allow_outlaws_to_teleport_out_of_town也设置为false。
   allow_outlaws_use_teleport_items: 'true'
-  
-  # Should towns be warned in case an outlaw roams the town?
-  # Warning: Outlaws can use this feature to spam residents with warnings!
-  # It is recommended to set this to true only if you're using outlaw teleporting with a warmup of 0 seconds.
+
+  # 是否应该向城镇发出警告，以防罪犯漫游城镇？
+  # 警告：罪犯可以使用此功能向居民发送警告！
+  # 建议仅在使用带有0秒预热时间的罪犯传送时将其设置为true。
   warn_town_on_outlaw: 'false'
-  
-  # How many seconds in between warning messages, to prevent spam.
+
+  # 防止垃圾邮件的秒数之间的警告消息。
   warn_town_on_outlaw_message_cooldown_in_seconds: '30'
-  
-  # If set to true, when a player is made into an outlaw using /t outlaw add NAME, and that new
-  # outlaw is within the town's borders, the new outlaw will be teleported away using the outlaw_teleport_warmup.
+
+  # 如果设置为true，当使用/t outlaw add NAME将玩家标记为罪犯，并且新的罪犯位于城镇边界内时，
+  # 新的罪犯将使用outlaw_teleport_warmup被传送走。
+  # 设置成为罪犯时，罪犯是否会被传送走。
   outlaw_teleport_away_on_becoming_outlawed: 'false'
-  
-  # How many seconds are required for outlaws to be teleported away?
-  # You can set this to 0 to instantly teleport the outlaw from town.
-  # This will not have any effect if allow_outlaws_to_enter_town is enabled.
+
+  # 罪犯被传送走之前需要的秒数。
+  # 您可以将其设置为0以立即将罪犯从城镇中传送走。
+  # 如果允许_outlaws_to_enter_town，则此设置不会产生任何影响。
   outlaw_teleport_warmup: '5'
-  
-  # What world do you want the outlaw teleported to if they aren't part of a town
-  # and don't have a bedspawn outside of the town they are outlawed in.
-  # They will go to the listed world's spawn. 
-  # If blank, they will go to the spawnpoint of the world the town is in.
+
+  # 如果罪犯不是城镇的一部分，并且没有城镇外的床重生点，则将罪犯传送到哪个世界。
+  # 他们将前往列出的世界的重生点。
+  # 如果留空，他们将转到城镇所在世界的重生点。
   outlaw_teleport_world: ''
-  
-  # Commands an outlawed player cannot use while in the town they are outlawed in.
+
+  # 罪犯在被宣告为罪犯时在城镇中不能使用的命令。
   outlaw_blacklisted_commands: somecommandhere,othercommandhere
-  
-  # Commands that cannot be run by players who have an active war.
+
+  # 战争期间不能由玩家运行的命令。
   war_blacklisted_commands: somecommandhere,othercommandhere
-  
-  # When set above zero this is the largest number of residents a town can support before they join/create a nation.
-  # Do not set this value to an amount less than the required_number_residents_join_nation below.
-  # Do not set this value to an amount less than the required_number_residents_create_nation below.
+
+  # 当此值设置为正数时，此城镇最多可以支持的居民数量，然后他们将加入/创建国家。
+  # 不要将此值设置为小于下面的required_number_residents_join_nation。
+  # 不要将此值设置为小于下面的required_number_residents_create_nation。
   maximum_number_residents_without_nation: '0'
-  
-  # The required number of residents in a town to join a nation
-  # If the number is 0, towns will not require a certain amount of residents to join a nation
+
+  # 加入国家所需的城镇居民人数
   required_number_residents_join_nation: '0'
-  
-  # The required number of residents in a town to create a nation
-  # If the number is 0, towns will not require a certain amount of residents to create a nation
+
+  # 创建国家所需的城镇居民人数
   required_number_residents_create_nation: '0'
-  
-  # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
+
+  # 如果设置为true，则如果国家因缺乏居民而解散，则首都将获得国家创建费用的退款。
   refund_disband_low_residents: 'true'
-  
-  # List of animals which can be killed on farm plots by town residents.
+
+  # 农场地块上可以被城镇居民杀死的动物列表。
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM
-  
-  # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
+
+  # 可以加入一个城镇的最大居民数。将其设置为0会禁用此功能。
   max_residents_per_town: '0'
-  
-  # The maximum number of residents that can be joined to a capital city.
-  # Requires max_residents_capital_override to be above 0.
-  # Uses the greater of max_residents_capital_override and max_residents_per_town.
+
+  # 可以加入首都的最大居民数。
+  # 需要max_residents_capital_override设置为大于0。
+  # 使用max_residents_capital_override和max_residents_per_town的最大值。
   max_residents_capital_override: '0'
-  
-  # If Towny should show players the townboard when they login
+
+  # 登录时是否显示城镇公告牌给玩家。
   display_board_onlogin: 'true'
-  
-  # If set to true, Towny will prevent a townblock from being unclaimed while an outsider is within the townblock's boundaries.
-  # When active this feature can cause a bit of lag when the /t unclaim command is used, depending on how many players are online.
+
+  # 如果设置为true，Towny将防止城镇块在外来者在城镇块边界内时被取消声明。
+  # 激活此功能时，在/t unclaim命令使用时可能会引起一些延迟，具体取决于在线玩家数量。
   outsiders_prevent_unclaim_townblock: 'false'
-  
-  # If set to true, Towny will prevent a town or plot from enabling PVP while an outsider is within the town's or plot's boundaries.
-  # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
+
+  # 如果设置为true，Towny将防止城镇或地块在外来者在城镇或地块边界内时启用PVP。
+  # 激活此功能时，在/t toggle pvp命令使用时可能会引起一些延迟，具体取决于在线玩家数量。
   outsiders_prevent_pvp_toggle: 'false'
-  
-  # If set to true, when a world has forcepvp set to true, homeblocks of towns will not be affected and have PVP set to off.
-  # Does not have any effect when Event War is active.
+
+  # 如果设置为true，在世界的forcepvp设置为true时，城镇的家块不会受影响，PVP会关闭。
+  # 当活动战争活跃时没有任何效果。
   homeblocks_prevent_forcepvp: 'false'
-  
-  # If People should keep their inventories on death in a town.
-  # Is not guaranteed to work with other keep inventory plugins!
+
+  # 城镇内死亡时是否保留玩家的物品。
+  # 不能保证与其他保留物品插件一起使用！
   keep_inventory_on_death_in_town: 'false'
-  
-  # If People should keep their inventories on death in their own town.
-  # Is not guaranteed to work with other keep inventory plugins!
+
+  # 在自己的城镇中死亡时是否保留玩家的物品。
+  # 不能保证与其他保留物品插件一起使用！
   keep_inventory_on_death_in_own_town: 'false'
-  
-  # If People should keep their inventories on death in an allied town.
-  # Is not guaranteed to work with other keep inventory plugins!
+
+  # 在盟友的城镇中死亡时是否保留玩家的物品。
+  # 不能保证与其他保留物品插件一起使用！
   keep_inventory_on_death_in_allied_town: 'false'
-  
-  # If People should keep their inventories on death in an arena townblock.
-  # Is not guaranteed to work with other keep inventory plugins!
+
+  # 在竞技场地块中死亡时是否保留玩家的物品。
+  # 不能保证与其他保留物品插件一起使用！
   keep_inventory_on_death_in_arena: 'false'
-  
-  # If People should keep their experience on death in a town.
-  # Is not guaranteed to work with other keep experience plugins!
+
+  # 城镇中死亡时是否保留玩家的经验值。
+  # 不能保证与其他保留经验插件一起使用！
   keep_experience_on_death_in_town: 'false'
-  
-  # If People should keep their experience on death in an arena townblock.
-  # Is not guaranteed to work with other keep experience plugins!
+
+  # 在竞技场地块中死亡时是否保留玩家的经验值。
+  # 不能保证与其他保留经验插件一起使用！
   keep_experience_on_death_in_arena: 'false'
-  
-  # The Maximum price that a town can be put for sale at. This refers to the price that
-  # someone could pay if they ran /t buytown, to buy a town that has been put up for sale.
+
+  # 城镇可以设置待售的最大价格。这是指可以支付的价格，如果有人运行/t buytown，购买待售的城镇。
   max_buytown_price: '999999999'
-  
-  # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
-  # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
+
+  # 可以设置城镇地块、大使馆、商店等地块价格的最大金额。
+  # 将此设置得更高可能会对使用Towny的mysql数据库造成危险。大数字可能会被缩短为科学计数法。
   maximum_plot_price_cost: '1000000.0'
-  
-  # maximum number of plots any single resident can own
-  max_plots_per_resident: '100'
-  
-  # If set to true, the /town screen will display the xyz coordinate for a town's spawn rather than the homeblock's Towny coords.
+
+  # 单个居民可以拥有的最大地块数。
+  # 如果设置为true，则/town screen将显示城镇的重生点的xyz坐标，而不是家块的Towny坐标。
   display_xyz_instead_of_towny_coords: 'false'
-  
-  # If set to true the /town list command will list randomly, rather than by whichever comparator is used, hiding resident counts.
+
+  # 如果设置为true，/town list命令将随机列出城镇，而不是按照使用的任何比较器列出，隐藏居民计数。
   display_town_list_randomly: 'false'
-  
-  # The ranks to be given preference when assigning a new mayor, listed in order of descending preference.
-  # All ranks should be as defined in `townyperms.yml`.
-  # For example, to give a `visemayor` preference over an `assistant`, change this parameter to `visemayor,assistant`.
+
+  # 优先级给予新市长时的排名，按降序优先级列出。
+  # 所有等级应按照`townyperms.yml`中定义的方式设置。
+  # 例如，要优先于`assistant`，更改此参数为`visemayor,assistant`。
   order_of_mayoral_succession: assistant
-  
-  # When enabled, blocks like lava or water will be unable to flow into other plots, if the owners aren't the same.
+
+  # 当启用时，如果所有者不同，像熔岩或水这样的块将无法流入其他地块。
   prevent_fluid_griefing: 'true'
-  
-  # Allows blocking commands inside towns and limiting them to plots owned by the players only.
-  # Useful for limiting sethome/home commands to plots owned by the players themselves and not someone else.
-  # Admins and players with the towny.admin.town_commands.blacklist_bypass permission node will not be hindered.
-  # Blocked commands lists can be for root commands: ie: /town, which will block all subcommands. A subcommand
-  # can be specified without blocking the root command: ie: /town spawn which would not block /town.
-  # When configuring the command lists below, do not include the / symbol.
+
+  # 允许阻止城镇内的命令并将其限制为仅由玩家拥有的地块。
+  # 用于将sethome/home命令限制为仅由玩家自己拥有而不是其他人拥有的地块。
+  # 管理员和具有towny.admin.town_commands.blacklist_bypass权限节点的玩家不会受到影响。
+  # 阻止的命令列表可以是根命令：例如：/town，这将阻止所有子命令。可以指定子命令而不是阻止根命令：例如：/town spawn，这不会阻止/town。
+  # 在配置下面的命令列表时，请不要包含/符号。
   town_command_blacklisting:
-  
-    # Allows blocking commands inside towns through the town_blacklisted_commands setting.
-    # This boolean allows you to disable this feature altogether if you don't need it
+
+    # 允许通过town_blacklisted_commands设置在城镇内阻止命令。
+    # 如果您不需要它，此布尔值允许您完全禁用此功能
     enabled: 'false'
-  
-    # Comma separated list of commands which cannot be run inside of any town.
+
+    # 不能在任何城镇内运行的命令的逗号分隔列表。
     town_blacklisted_commands: somecommandhere,othercommandhere
-  
-    # This allows the usage of blacklisted commands only in plots personally-owned by the player.
-    # Players with the towny.claimed.townowned.* permission node will be able to run these commands
-    # inside of town-owned land. This would include mayors, assistants and possibly a builder rank.
-    # Players with the towny.claimed.owntown.* permission node (given to mayors/assistants usually,)
-    # will also not be limited by this command blacklist.
+
+    # 仅在玩家拥有的地块中使用阻止命令。
+    # 具有towny.claimed.townowned.*权限节点的玩家将能够在城镇拥有的土地上运行这些命令。
+    # 这将包括市长、助手和可能的建造者等级。
+    # 具有towny.claimed.owntown.*权限节点（通常分配给市长/助手）的玩家也不会受到此命令黑名单的限制。
     player_owned_plot_limited_commands: sethome,home
-  
-    # This allows the usage of blacklisted commands only in the player's town 
-    # and the wilderness (essentially blocking commands from being ran by tourists/visitors)
-    # Players with the towny.globally_welcome permission node are not going to be limited by this list.
-    # Commands have to be on town_command_blacklisting.town_blacklisted_commands, else this is not going to be checked.
+
+    # 仅在玩家的城镇和荒野（实质上阻止游客/访问者运行命令）中使用阻止命令。
+    # 具有towny.globally_welcome权限节点的玩家不会受到此列表的限制。
+    # 命令必须在town_command_blacklisting.town_blacklisted_commands上，否则不会进行检查。
     own_town_and_wilderness_limited_commands: sethome,home
-  
-    # When set to true, trusted residents (residents that are trusted by a town directly,
-    # as well as residents that are members of a town that is trusted,) will be able to use
-    # commands that only town residents could use.
+
+    # 当设置为true时，受信任的居民（直接由城镇信任的居民，以及城镇信任的成员，）将能够使用仅城镇居民可以使用的命令。
     own_town_and_wilderness_limited_commands_allow_trusted_residents: 'true'
-  
-    # When set to true, residents which are allies of the town (which could be nation members as well as allied nations' members) will be able to use
-    # commands that only town residents could use.
+
+    # 当设置为true时，是城镇的盟友（可能是国家成员以及联盟国的成员）将能够使用
+    # 仅城镇居民可以使用的命令。
     own_town_and_wilderness_limited_commands_allow_allies: 'false'
-  
-  # When enabled, town (and nation) names will automatically be capitalised upon creation.
+
+  # 启用时，城镇（和国家）名称将在创建时自动大写。
   automatic_capitalisation: 'false'
-  
-  # When disabled, towns will not be able to be created with or renamed to a name that contains numbers.
-  # Disabling this option does not affect already created towns.
+
+  # 禁用时，将无法创建或将城镇重命名为包含数字的名称。
+  # 禁用此选项不会影响已创建的城镇。
   allow_numbers_in_town_name: 'true'
-  
-  # This setting determines the list of allowed town map colors.
-  # The color codes are in hex format.
+
+  # 此设置确定允许的城镇地图颜色列表。
+  # 颜色代码以十六进制格式提供。
   allowed_map_colors: aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00
   
-  # List of ranks (separated by a comma) that will prevent a player from being kicked from a town.
+  # 不会被从城镇中踢出的等级列表（用逗号分隔）。
   unkickable_ranks: assistant
   
   
 ############################################################
 # +------------------------------------------------------+ #
-# |              Global nation settings                  | #
+# |                 全局国家设置                          | #
 # +------------------------------------------------------+ #
 ############################################################
-  
+
 global_nation_settings:
   
-  # Nation Zones are a special type of wilderness surrounding Capitals of Nations or Nation Capitals and their Towns.
-  # When it is enabled players who are members of the nation can use the wilderness surrounding the town like normal.
-  # Players who are not part of that nation will find themselves unable to break/build/switch/itemuse in this part of the wilderness.
-  # The amount of townblocks used for the zone is determined by the size of the nation and configured in the nation levels.
-  # Because these zones are still wilderness anyone can claim these townblocks.
-  # It is recommended that whatever size you choose, these numbers should be less than the min_plot_distance_from_town_plot otherwise
-  # someone might not be able to build/destroy in the wilderness outside their town.
+  # 国家区域是围绕国家或城镇的首都和城镇的一种特殊类型的荒野。
+  # 当启用时，属于该国家的玩家可以像正常情况下一样使用围绕城镇的荒野。
+  # 不属于该国家的玩家将发现自己无法在该荒野区域内打破/建造/切换/使用物品。
+  # 国家区域使用的城镇块的数量由国家的大小决定，并在国家级别中配置。
+  # 由于这些区域仍然是荒野，任何人都可以声明这些城镇块。
+  # 建议无论您选择什么大小，这些数字都应小于min_plot_distance_from_town_plot，否则
+  # 有人可能无法在城镇外的荒野中建造/破坏。
   nationzone:
   
-    # Nation zone feature is disabled by default. This is because it can cause a higher server load for servers with a large player count.
+    # 国家区域功能默认情况下已禁用。这是因为它可能会导致服务器上的负载增加，特别是对于玩家人数较多的服务器。
     enable: 'false'
   
-    # When set to true, only the capital town of a nation will be surrounded by a nation zone type of wilderness.
+    # 当设置为true时，只有国家的首都城镇将被国家区域类型的荒野所包围。
     only_capitals: 'true'
   
-    # Amount of buffer added to nation zone width surrounding capitals only. Creates a larger buffer around nation capitals.
+    # 国家区域周围的首都城市添加的缓冲区数量。在国家首都周围创建一个更大的缓冲区。
     capital_bonus_size: '0'
   
-    # When set to true, nation zones are disabled during the the Towny war types.
+    # 当设置为true时，国家区域在Towny战争类型期间被禁用。
     war_disables: 'true'
   
-    # When set to true, players will receive a notification when they enter into a nationzone.
-    # Set to false by default because, like the nationzone feature, it will generate more load on servers.
+    # 当设置为true时，玩家进入国家区域时将收到通知。
+    # 默认设置为false，因为与国家区域功能一样，它将在服务器上生成更多的负载。
     show_notifications: 'false'
   
-  # If Towny should show players the nationboard when they login.
+  # 如果Towny在玩家登录时应该显示国家板。
   display_board_onlogin: 'true'
   
-  # If true the capital city of nation cannot be neutral/peaceful.
+  # 如果为true，则国家的首都城市不能是中立/和平的。
   capitals_cannot_be_neutral: 'false'
   
-  # When set to true, the nation's NationLevel is determined by the number of towns in the nations, instead of the number of residents.
+  # 当设置为true时，国家的NationLevel由国家中的城镇数量而不是居民数量确定。
   nation_level_is_determined_by_town_count_instead_of_resident_count: 'false'
   
-  # If higher than 0, it will limit how many towns can be joined into a nation.
-  # Does not affect existing nations that are already over the limit.
+  # 如果大于0，则限制可以加入国家的城镇数量。
+  # 不影响已经超过限制的现有国家。
   max_towns_per_nation: '0'
   
-  # If higher than 0, it will limit how many residents can join a nation.
-  # Does not affect existing nations that are already over the limit.
+  # 如果大于0，则限制可以加入国家的居民数量。
+  # 不影响已经超过限制的现有国家。
   max_residents_per_nation: '0'
   
-  # This setting determines the list of allowed nation map colors.
-  # The color codes are in hex format.
+  # 此设置确定允许的国家地图颜色列表。
+  # 颜色代码以十六进制格式表示。
   allowed_map_colors: aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00
   
-  # The maximum amount of allies that a nation can have, set to -1 to have no limit.
+  # 国家可以拥有的最大盟友数量，设置为-1表示没有限制。
   max_allies: '-1'
   
-  proximity:
+proximity:
   
-    # The maximum number of townblocks a town's homeblock can be away from their nation capital's homeblock.
-    # Automatically precludes towns from one world joining a nation in another world.
-    # If the number is 0, towns will not require a proximity to a nation.
-    nation_proximity_to_capital_city: '0.0'
+  # 城镇的家块可以与其国家首都的家块之间的最大城镇块数。
+  # 自动排除一个世界的城镇加入另一个世界的国家。
+  # 如果数字为0，则城镇不需要接近国家。
+  nation_proximity_to_capital_city: '0.0'
   
-    # The maximum number of townblocks a town's homeblock can be away from other towns's homeblocks in the nation.
-    # This setting is only used when nation_proximity_to_capital_city is above 0.
-    # When used, and a town is out of range of their capital city, the remaining towns in the nation will be parsed,
-    # if one of those towns' homeblocks is close enough to the town's homeblock, the town can remain in the nation.
-    # Leave this setting at 0.0 in order to de-activate nations' towns granting further range for towns in the nation.
-    nation_proximity_to_other_nation_towns: '0.0'
+  # 城镇的家块可以与国家其他城镇的家块之间的最大城镇块数。
+  # 当nation_proximity_to_capital_city大于0时才使用此设置。
+  # 当使用时，如果一个城镇距离其首都城市太远，将解析国家中剩余的城镇，
+  # 如果其中一个城镇的家块距离城镇的家块足够近，则城镇可以留在国家中。
+  # 将此设置保持为0.0以停用国家中的城镇授予其他城镇更大的范围。
+  nation_proximity_to_other_nation_towns: '0.0'
   
-    # The maximum number of townblocks a town's homeblock can be away from their nation's capital's homeblock,
-    # when the town is being allowed to go further out from the capital because of the nation_proximity_to_other_nation_towns
-    # setting above.
-    # This setting is what will stop a nation being able to go incredibly wide due to towns 'chaining' together.
-    # This setting is only used when nation_proximity_to_capital_city is above 0.
-    # Leave this setting at 0.0 in order to allow nations to chain towns together to go as wide as they like.
-    absolute_distance_from_capital: '0.0'
+  # 当城镇由于nation_proximity_to_other_nation_towns上述设置而被允许从首都更远处出发时，
+  # 城镇的家块可以与其国家首都的家块之间的最大城镇块数。
+  # 此设置将阻止一个国家因城镇“链接”在一起而变得非常广泛。
+  # 当nation_proximity_to_capital_city大于0时才使用此设置。
+  # 将此设置保持为0.0以允许国家将城镇链接在一起，使其变得任意宽。
+  absolute_distance_from_capital: '0.0'
   
-  # When disabled, nations will not be able to be created with or renamed to a name that contains numbers.
-  # Disabling this option does not affect already created nations.
-  allow_numbers_in_nation_name: 'true'
-  
-  
+# 当禁用时，国家将无法创建或重命名为包含数字的名称。
+# 禁用此选项不影响已经创建的国家。
+allow_numbers_in_nation_name: 'true'
+
 ############################################################
 # +------------------------------------------------------+ #
-# |                Town Claiming Settings                | #
+# |                城镇领地声明设置                      | #
 # +------------------------------------------------------+ #
 ############################################################
-  
+
 claiming:
   
-  # The maximum townblocks available to a town is (numResidents * ratio).
-  # Setting this value to 0 will instead use the level based jump values determined in the town level config.
-  # Setting this to -1 will result in every town having unlimited claims.
+  # 一个城镇可用的最大城镇块数为（numResidents * ratio）。
+  # 将此值设置为0将改为使用在城镇级别配置中确定的基于级别的跳跃值。
+  # 将其设置为-1将导致每个城镇具有无限的声明。
   town_block_ratio: '8'
   
-  # The maximimum amount of townblocks a town can have, if town_block_ratio is 0 the max size will be decided by the town_levels.
-  # Set to 0 to have no size limit.
+  # 城镇可以拥有的最大城镇块数，如果town_block_ratio为0，则最大尺寸将由城镇级别决定。
+  # 设置为0以不限制大小。
   town_block_limit: '0'
   
-  # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
-  # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
-  # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
-  # Each cell is (town_block_size * town_block_size * height-of-the-world) in size, with height-of-the-world
-  # being from the bottom to the top of the build-able world.
+  # 正方形网格单元格的大小。建议仅在首次安装Towny时更改此值。
+  # 这样做会在输入数据后不希望地移动事物。使用较小的值将允许更高的精度，
+  # 但设置起来需要更多的工作。此外，极小的值将使缓存无用。
+  # 每个单元格的大小为（town_block_size * town_block_size * 世界高度），
+  # 世界高度是从可建造的世界底部到顶部的距离。
   town_block_size: '16'
   
-  # When false players will not see the particle flood effect when they claim townblocks.
+  # 当为false时，玩家在声明城镇块时不会看到粒子泛滥效果。
   show_claiming_particles: 'true'
   
-  # The minimum adjacent town blocks required to expand.
-  # This can prevent long lines and snake-like patterns.
-  # Set to -1 to disable. Set to 3 to force wider expansions of towns.
+  # 扩展所需的最小相邻城镇块数。
+  # 这可以防止出现长线和蛇形图案。
+  # 设置为-1以禁用。设置为3以强制扩大城镇的范围。
   min_adjacent_blocks: '-1'
   
-  # maximum number used in /town claim/unclaim # commands.
-  # set to 0 to disable limiting of claim radius value check.
-  # keep in mind that the default value of 4 is a radius, 
-  # and it will allow claiming 9x9 (80 plots) at once.
+  # /town claim/unclaim # 命令中使用的最大数字。
+  # 将其设置为0以禁用声明半径值检查的限制。
+  # 请记住，默认值为4是一个半径，
+  # 它将允许一次性声明9x9（80个地块）。
   max_claim_radius_value: '4'
   
   
-  biome_rules:
+biome_rules:
   
-    # When a townblock is made up of too many blocks of these biomes, it will not be able to be claimed by a town.
-    unwanted_biomes:
+  # 当一个城镇块由太多这些生物群系的方块组成时，将无法被城镇声明。
+  unwanted_biomes:
   
-      # When true, unwanted biomes will be tested for when a player is claiming land.
-      enabled: 'false'
+    # 当为true时，当玩家声明土地时，将测试不需要的生物群系。
+    enabled: 'false'
   
-      # A comma separated list of biome names that will add up towards a townblock's un-claim-ability.
-      # Use lower-case only or this will not work properly for you.
-      biomes: the_end,end_barrens,end_highlands,end_midlands,small_end_islands
+    # 逗号分隔的生物群系名称列表，这些生物群系将累积到城镇块的不可声明性中。
+    # 仅使用小写，否则无法正常工作。
+    biomes: the_end,end_barrens,end_highlands,end_midlands,small_end_islands
   
-      # The max amount of combined unwanted biomes as a percent, that will be allowed in plots being claimed by towns.
-      # For example, if a townblock would be more than X percent ocean it will not be able to be claimed.
-      threshold: '55'
-  
-  
-    ocean_blocking:
-  
-      # When true, any wilderness plot which has more Ocean biome in it than the allowed threshold (see below,)
-      # will not be able to be claimed.
-      enabled: 'false'
-  
-      # The max amount of combined ocean biomes as a percent, that will be allowed in plots being claimed by towns.
-      # For example, if a townblock would be more than X percent ocean it will not be able to be claimed.
-      threshold: '55'
+    # 允许在被城镇声明的地块中的最大组合不需要的生物群系百分比。
+    # 例如，如果一个城镇块超过X％的海洋，则将无法被声明。
+    threshold: '55'
   
   
-  distance_rules:
+  ocean_blocking:
   
-    # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
-    # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
-    min_distances_ignored_for_towns_in_same_nation: 'true'
+    # 当为true时，任何荒野地块中有更多海洋生物群系的地块（超过下面允许的阈值）将无法被声明。
+    enabled: 'false'
   
-    # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
-    # will be ignored for towns that are mutually allied. Setting to false will keep all towns separated the same.
-    min_distances_ignored_for_towns_in_allied_nation: 'false'
-  
-    # Minimum number of plots any towns plot must be from the next town's own plots.
-    # Put in other words: the buffer area around every claim that no other town can claim into.
-    # Does not affect towns which are in the same nation.
-    # This will prevent town encasement to a certain degree.
-    min_plot_distance_from_town_plot: '5'
-  
-    # Minimum number of plots any towns home plot must be from the next town.
-    # Put in other words: the buffer area around every homeblock that no other town can claim into.
-    # Does not affect towns which are in the same nation.
-    # This will prevent someone founding a town right on your doorstep
-    min_distance_from_town_homeblock: '5'
-  
-    # Minimum number of plots an outpost must be from any other town's plots.
-    # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
-    # near to each other, but want to keep outposts away from towns.
-    min_distance_for_outpost_from_plot: '5'
-  
-    # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
-    # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
-    # Do not set lower than min_distance_for_outpost_from_plot above.
-    max_distance_for_outpost_from_town_plot: '0'
-  
-    # Minimum distance between homeblocks.
-    min_distance_between_homeblocks: '0'
-  
-    # Maximum distance between homeblocks.
-    # This will force players to build close together.
-    max_distance_between_homeblocks: '0'
-  
-    # The minimum distance that a new town must be from nearby towns' plots.
-    # When set to -1, this will use the value of the min_plot_distance_from_town_plot option.
-    new_town_min_distance_from_town_plot: '-1'
-  
-    # The minimum distance that a new town must be from nearby towns' homeblocks.
-    # When set to -1, this will use the value of the min_distance_from_town_homeblock setting.
-    new_town_min_distance_from_town_homeblock: '-1'
+    # 允许在被城镇声明的地块中的最大组合海洋生物群系百分比。
+    # 例如，如果一个城镇块超过X％的海洋，则将无法被声明。
+    threshold: '55'
   
   
-  outposts:
+distance_rules:
   
-    # Allow towns to claim outposts (a townblock not connected to town).
-    allow_outposts: 'true'
+  # 如果为true，则以下设置：min_plot_distance_from_town_plot和min_distance_from_town_homeblock
+  # 将不适用于属于同一国家的城镇。将设置为false将使所有城镇保持分开。
+  min_distances_ignored_for_towns_in_same_nation: 'true'
   
-    # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
-    # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
-    # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
-    # larger can have more outposts.
-    # When activated, this setting will not cause towns who already have higher than their limit
-    # to lose outposts. They will not be able to start new outposts until they have unclaimed outposts
-    # to become under their limit. Likewise, towns that join a nation and receive bonus outposts will
-    # be over their limit if they leave the nation.
-    limit_outposts_using_town_and_nation_levels: 'false'
+  # 如果为true，则以下设置：min_plot_distance_from_town_plot和min_distance_from_town_homeblock
+  # 将不适用于互相结盟的城镇。将设置为false将使所有城镇保持分开。
+  min_distances_ignored_for_towns_in_allied_nation: 'false'
   
-    # When limit_outposts_using_town_and_nation_levels is also true, towns which are over their outpost
-    # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
-    # until they have dropped below their limit.
-    # eg: If their limit is 3 then they cannot use /t outpost 4
-    over_outpost_limits_stops_teleports: 'false'
+  # 任何城镇地块必须与下一个城镇的自己地块之间的最小地块数。
+  # 换句话说：每个声明周围的缓冲区，其他城镇无法声明进入。
+  # 不影响属于同一国家的城镇。
+  # 这将在一定程度上防止城镇封锁。
+  min_plot_distance_from_town_plot: '5'
   
-    # The amount of residents a town needs to claim an outpost,
-    # Setting this value to 0, means a town can claim outposts no matter how many residents
-    minimum_amount_of_residents_in_town_for_outpost: '0'
+  # 任何城镇的家块必须与下一个城镇的最小地块数。
+  # 换句话说：每个家块周围的缓冲区，其他城镇无法声明进入。
+  # 不影响属于同一国家的城镇。
+  # 这将防止有人在你家门口建立一个城镇
+  min_distance_from_town_homeblock: '5'
+  
+  # 外哨站必须与任何其他城镇的地块之间的最小地块数。
+  # 当min_plot_distance_from_town_plot设置为接近零时，这是有用的，
+  # 允许城镇在彼此附近拥有声明，但希望使外哨站远离城镇。
+  min_distance_for_outpost_from_plot: '5'
+  
+  # 设置为0以禁用。当大于0时，外哨站只能在离城镇所拥有的城镇块给定数量的范围内声明。
+  # 将此设置为大于0的任何值将阻止外哨站在离城镇的家乡世界边界之外的地方。
+  # 不要设置低于上面的min_distance_for_outpost_from_plot。
+  max_distance_for_outpost_from_town_plot: '0'
+  
+  # 家块之间的最小距离。
+  min_distance_between_homeblocks: '0'
+  
+  # 家块之间的最大距离。
+  # 这将迫使玩家靠得更近。
+  max_distance_between_homeblocks: '0'
+  
+  # 新城镇必须与附近城镇的地块之间的最小距离。
+  # 当设置为-1时，这将使用min_plot_distance_from_town_plot选项的值。
+  new_town_min_distance_from_town_plot: '-1'
+  
+  # 新城镇必须与附近城镇的家块之间的最小距离。
+  # 当设置为-1时，这将使用min_distance_from_town_homeblock设置的值。
+  new_town_min_distance_from_town_homeblock: '-1'
+
+outposts:
+  
+  # 允许城镇声明外哨站（与城镇不连接的城镇块）。
+  allow_outposts: 'true'
+  
+  # 当设置为true时，外哨站可以受到Town Levels的townOutpostLimit值和Nation Levels中的nationBonusOutpostLimit值的限制。
+  # 通过这种方式，可以使国家成为接收外哨站的唯一方式，或者作为获得更多外哨站的激励。
+  # 大一点的城镇可以拥有更多的外哨站。
+  # 当激活时，此设置不会导致已经超过其限制的城镇失去外哨站。
+  # 他们将无法开始新的外哨站，直到他们的外哨站少于他们的限制。同样，城镇加入国家并获得奖励外哨站的城镇
+  # 如果他们离开国家，将超出其限制。
+  limit_outposts_using_town_and_nation_levels: 'false'
+  
+  # 当limit_outposts_using_town_and_nation_levels也为true时，超出外哨站限制的城镇将无法使用其/town外哨站传送
+  # 来传送到超出其限制的外哨站，直到他们降到他们的限制以下。
+  # 例如：如果他们的限制为3，那么他们就不能使用/t outpost 4
+  over_outpost_limits_stops_teleports: 'false'
+  
+  # 声明外哨站所需的居民数量，
+  # 将此值设置为0，表示无论居民数量如何，城镇都可以声明外哨站
+  minimum_amount_of_residents_in_town_for_outpost: '0'
   
   
-  overclaiming:
+overclaiming:
   
-    # A feature that allows towns which have too many townblocks claimed (overclaimed) ie: 120/100 TownBlocks, 
-    # to have their land stolen by other towns which are not overclaimed. Using this incentivises Towns to keep
-    # their residents from leaving, and will mean that mayors will be more careful about which land they choose
-    # to claim.
-    # Overclaiming does not allow a town to be split into two separate parts, requiring the Town that is stealing
-    # land to work from the outside inwards.
-    # It is highly recommended to only use this on servers where outposts are disabled, and requiring 
-    # a number of adjacent claims over 1 is enabled.
-    # Towns take land using /t takeoverclaim.
-    being_overclaimed_allows_other_towns_to_steal_land: 'false'
+  # 一种功能，允许已声明太多城镇块（超过声明）的城镇，即：120/100城镇块，
+  # 将其土地被其他未被过度声明的城镇偷走。使用此功能可以激励城镇保持其居民不离开，
+  # 并且将使市长更加谨慎地选择要声明的土地。
+  # 过度声明不允许城镇被分成两个独立的部分，需要偷取土地的城镇从外部向内部工作。
+  # 强烈建议仅在禁用外哨站且需要一定数量的相邻声明时使用此功能。
+  # 城镇使用/t takeoverclaim来夺取土地。
+  being_overclaimed_allows_other_towns_to_steal_land: 'false'
   
-    # While true, overclaiming is stopped by the min_distance_from_town_homeblock setting below.
-    # This prevents a town from having townblocks stolen surrounding their homeblocks.
-    overclaiming_prevented_by_homeblock_radius: 'true'
+  # 当为true时，通过下面的min_distance_from_town_homeblock设置阻止过度声明。
+  # 这将防止城镇的周围被偷取，包围着他们的家块。
+  overclaiming_prevented_by_homeblock_radius: 'true'
   
-    # When in use, requires that a town be of a minimum age in order to overclaim another town. This prevents new towns being made just to overclaim someone.
-    # Default is for 7 days.
-    town_age_requirement: 7d
+  # 在使用时，要求城镇具有最低年龄才能过度声明另一个城镇。这可以防止新城镇只是为了过度声明某人。
+  # 默认为7天。
+  town_age_requirement: 7d
   
-    # When in use, requires an amount of time to pass before the /t takeoverclaim command can be used again.
-    command_cooldown: 0m
+  # 在使用时，需要一定时间才能再次使用/t takeoverclaim命令。
+  command_cooldown: 0m
   
-    # When true, when the towns involved in the overclaiming both have nations, the overclaiming town's nation will have to have the overclaimed town's nation declared as an enemy.
-    # Towns with no nation are not affected by this rule.
-    nations_required_to_be_enemies: 'false'
+  # 当为true时，涉及过度声明的城镇都有国家时，过度声明城镇的国家将不得不将被过度声明的城镇的国家声明为敌人。
+  # 没有国家的城镇不受此规则影响。
+  nations_required_to_be_enemies: 'false'
   
   
-  purchased_bonus_blocks:
+purchased_bonus_blocks:
   
-    # Limits the maximum amount of bonus blocks a town can buy.
-    # This setting does nothing when town.max_purchased_blocks_uses_town_levels is set to true.
-    max_purchased_blocks: '0'
+  # 限制城镇可以购买的最大奖励块数。
+  # 当town.max_purchased_blocks_uses_town_levels设置为true时，此设置无效。
+  max_purchased_blocks: '0'
   
-    # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
-    max_purchased_blocks_uses_town_levels: 'true'
+  # 当设置为true时，config的town_level部分确定了城镇可以购买的最大奖励块数。
+  max_purchased_blocks_uses_town_levels: 'true'
   
   
 ############################################################
 # +------------------------------------------------------+ #
-# |                   Spawning Settings                  | #
+# |                       传送设置                        | #
 # +------------------------------------------------------+ #
 ############################################################
   
 spawning:
   
-  # Decides whether confirmations should appear if you spawn to an area with an associated cost.
+  # 决定是否在你传送到一个有相关成本的区域时显示确认信息。
   spawn_cost_warnings: 'true'
   
-  # If enabled, particles will appear around town, nation, outpost & jail spawns.
+  # 如果启用，粒子将出现在城镇、国家、哨站和监狱的出生点周围。
   visualized_spawn_points_enabled: 'true'
   
   spawning_warmups:
   
-    # If non zero it delays any spawn request by x seconds.
+    # 如果非零，将任何传送请求延迟x秒。
     teleport_warmup_time: '0'
   
-    # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
+    # 当设置为true时，如果玩家当前处于传送热身状态，移动将取消他们的传送。
     movement_cancels_spawn_warmup: 'false'
   
-    # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
+    # 当设置为true时，如果玩家在传送热身期间受到任何伤害，他们的传送将被取消。
     damage_cancels_spawn_warmup: 'false'
   
   town_spawn:
   
-    # Allow the use of /town spawn
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the town,
-    # when there is a war or peace.
+    # 允许使用/town spawn命令
+    # 有效值为：true、false、war、peace
+    # 当设置为war或peace时，只有在战争或和平时才能传送到城镇。
     allow_town_spawn: 'true'
   
-    # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the town,
-    # when there is a war or peace.
+    # 允许普通居民使用/town spawn [town]（如果他们是公共的，则传送到其他城镇）。
+    # 有效值为：true、false、war、peace
+    # 当设置为war或peace时，只有在战争或和平时才能传送到城镇。
     allow_town_spawn_travel: 'true'
   
-    # Allow regular residents to use /town spawn [town] to other towns in your nation.
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the town,
-    # when there is a war or peace.
+    # 允许普通居民使用/town spawn [town]传送到你国家的其他城镇。
+    # 有效值为：true、false、war、peace
+    # 当设置为war或peace时，只有在战争或和平时才能传送到城镇。
     allow_town_spawn_travel_nation: 'true'
   
-    # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the town,
-    # when there is a war or peace.
+    # 允许普通居民使用/town spawn [town]传送到与你国家结盟的国家的其他城镇。
+    # 有效值为：true、false、war、peace
+    # 当设置为war或peace时，只有在战争或和平时才能传送到城镇。
     allow_town_spawn_travel_ally: 'true'
   
-    # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
+    # 当设置为true时，国家和盟友传送也需要目标城镇将其状态设置为公共。
     is_nation_ally_spawning_to_town_requiring_public_status: 'false'
   
-    # When set to true, a player that is trusted by a town is allowed to spawn to the town as if they were a resident.
-    # Allows allows the residents of entire an town when that town is trusted by the town.
+    # 当设置为true时，受城镇信任的玩家被允许传送到该城镇，就像他们是居民一样。
+    # 当城镇信任该城镇时，也允许居民传送到整个城镇。
     do_trusted_residents_count_as_residents: 'false'
   
-    # When a resident joins a town, should they be prompted to use spawn to the town?
-    # This requires them to not already be standing in the town, and also to be able to use /t spawn and whatever costs may be associated with it.
+    # 当居民加入一个城镇时，是否提示他们使用城镇传送？
+    # 这要求他们不在城镇内，并且能够使用/t spawn以及可能与之相关的任何费用。
     are_new_residents_prompted_to_town_spawn: 'false'
   
-    # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
-    # Allowed options: unclaimed,enemy,neutral,outlaw
+    # 防止玩家在未声明的区域和/或敌对/中立城镇中使用/town spawn命令。
+    # 允许选项：unclaimed、enemy、neutral、outlaw
     prevent_town_spawn_in: enemy,outlaw
   
-    # When true, players will be allowed to spawn to peaceful/neutral towns in which they are considered enemies.
-    # Setting this to true will make town spawn points unsafe for private towns which are part of nations with enemies.
+    # 当为true时，允许玩家传送到他们被认为是敌人的和平/中立城镇。
+    # 将此设置为true将使城镇出生点对于那些属于与敌人有关的国家的私人城镇不安全。
     allow_enemies_spawn_to_peaceful_towns: 'false'
   
-    spawning_cooldowns:
+  spawning_cooldowns:
   
-      # Number of seconds that must pass before a player can use /t spawn or /res spawn.
-      town_spawn_cooldown_time: '30'
+    # 玩家可以使用/t spawn或/res spawn命令之前必须等待的秒数。
+    town_spawn_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player can use /t outpost.
-      outpost_cooldown_time: '30'
+    # 玩家可以使用/t outpost命令之前必须等待的秒数。
+    outpost_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player of the same nation can use /t spawn.
-      nation_member_town_spawn_cooldown_time: '30'
+    # 同一国家的玩家可以使用/t spawn命令之前必须等待的秒数。
+    nation_member_town_spawn_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player in an allied nation can use /t spawn.
-      nation_ally_town_spawn_cooldown_time: '30'
+    # 盟友国家的玩家可以使用/t spawn命令之前必须等待的秒数。
+    nation_ally_town_spawn_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player who is not a member or ally of town can use /t spawn.
-      unaffiliated_town_spawn_cooldown_time: '30'
+    # 非成员或盟友的城镇玩家可以使用/t spawn命令之前必须等待的秒数。
+    unaffiliated_town_spawn_cooldown_time: '30'
+
+nation_spawn:
   
-  nation_spawn:
+  # 如果启用，只允许在首都城市设置国家出生点。
+  force_nation_spawn_in_capital: 'true'
   
-    # If enabled, only allow the nation spawn to be set in the capital city.
-    force_nation_spawn_in_capital: 'true'
+  # 允许使用/nation spawn命令
+  # 有效值为：true、false、war、peace
+  # 当设置为war或peace时，只有在战争或和平时才能传送到国家。
+  allow_nation_spawn: 'true'
   
-    # Allow the use of /nation spawn
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the nation,
-    # when there is a war or peace.
-    allow_nation_spawn: 'true'
+  # 允许普通居民使用/nation spawn [nation]（如果它们是公共的，则传送到其他国家）。
+  # 有效值为：true、false、war、peace
+  # 当设置为war或peace时，只有在战争或和平时才能传送到国家。
+  allow_nation_spawn_travel: 'true'
   
-    # Allow regular residents to use /nation spawn [nation] (TP to other nations if they are public).
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the nation,
-    # when there is a war or peace.
-    allow_nation_spawn_travel: 'true'
+  # 允许普通居民使用/nation spawn [nation]传送到与你国家结盟的其他国家。
+  # 有效值为：true、false、war、peace
+  # 当设置为war或peace时，只有在战争或和平时才能传送到国家。
+  allow_nation_spawn_travel_ally: 'true'
   
-    # Allow regular residents to use /nation spawn [nation] to other nations allied with your nation.
-    # Valid values are: true, false, war, peace
-    # When war or peace is set, it is only possible to teleport to the nations,
-    # when there is a war or peace.
-    allow_nation_spawn_travel_ally: 'true'
+  spawning_cooldowns:
   
-    spawning_cooldowns:
+    # 同一国家的玩家可以使用/n spawn命令之前必须等待的秒数。
+    nation_member_nation_spawn_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player of the same nation can use /n spawn.
-      nation_member_nation_spawn_cooldown_time: '30'
+    # 盟友国家的玩家可以使用/n spawn命令之前必须等待的秒数。
+    nation_ally_nation_spawn_cooldown_time: '30'
   
-      # Number of seconds that must pass before a player allied with the nation can use /n spawn.
-      nation_ally_nation_spawn_cooldown_time: '30'
+    # 非成员或盟友的玩家可以使用/n spawn命令之前必须等待的秒数。
+    unaffiliated_nation_spawn_cooldown_time: '30'
+
+respawning:
   
-      # Number of seconds that must pass before a player who is not a member or ally can use /n spawn.
-      unaffiliated_nation_spawn_cooldown_time: '30'
+  # 当为true时，Towny将处理重新生成，使用城镇或居民的出生点。
+  town_respawn: 'false'
   
-  respawning:
+  # 仅当玩家在与城镇出生点相同的世界中死亡时，城镇重新生成才会发生。
+  town_respawn_same_world_only: 'false'
   
-    # When true Towny will handle respawning, with town or resident spawns.
-    town_respawn: 'false'
+  # 当为true时，玩家将重新生成到重生锚点，而不是他们自己的城镇。
+  respawn_anchor_higher_precendence: 'true'
   
-    # Town respawn only happens when the player dies in the same world as the town's spawn point.
-    town_respawn_same_world_only: 'false'
+  respawn_protection:
   
-    # When this is true, players will respawn to respawn anchors on death rather than their own town.
-    respawn_anchor_higher_precendence: 'true'
+    # 当大于0秒时，玩家重新生成后被视为无敌的时间。
+    # 攻击其他玩家的无敌玩家将失去他们的无敌状态。
+    # 重新生成后传送的无敌玩家也将失去他们的无敌状态。
+    time: 10s
   
-    respawn_protection:
-  
-      # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
-      # Invulnerable players who attack other players will lose their invulnerability.
-      # Invulnerable players who teleport after respawn will also lose their invulnerability.
-      time: 10s
-  
-      # If disabled, players will not be able to pickup items while under respawn protection.
-      allow_pickup: 'true'
-  
-  
+    # 如果禁用，玩家在受到重新生成保护时将无法拾取物品。
+    allow_pickup: 'true'
+
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Plugin interfacing                   | #
@@ -1185,108 +1141,108 @@ spawning:
 ############################################################
   
 plugin:
-  # See database.yml file for flatfile/mysql settings.
+  # 查看flatfile/mysql设置，请参阅database.yml文件。
   database:
   
-    # Flatfile backup settings.
+    # 平面文件备份设置。
     daily_backups: 'true'
     backups_are_deleted_after: 90d
   
-    # Valid entries are: tar, tar.gz, zip, or none for no backup.
+    # 有效条目包括：tar、tar.gz、zip或none（无备份）。
     flatfile_backup_type: tar
   
   interfacing:
   
     tekkit:
-      # Add any fake players for client/server mods (aka Tekkit) here
+      # 在此添加客户端/服务器模组（即Tekkit）的任何假玩家
       fake_residents: '[IndustrialCraft],[BuildCraft],[Redpower],[Forestry],[Turtle]'
   
-    # This enables/disables all the economy functions of Towny.
-    # This will first attempt to use Vault or Reserve to bridge your economy plugin with Towny.
-    # If Reserve/Vault is not present it will attempt to find a supported economy plugin.
-    # If neither Vault/Reserve or supported economy are present it will not be possible to create towns or do any operations that require money.
+    # 这启用/禁用Towny的所有经济功能。
+    # 这将首先尝试使用Vault或Reserve将您的经济插件与Towny桥接。
+    # 如果没有Reserve/Vault，则将尝试找到受支持的经济插件。
+    # 如果没有Vault/Reserve或受支持的经济插件，则将无法创建城镇或执行需要金钱的任何操作。
     using_economy: 'true'
   
     luckperms:
   
-      # If enabled, Towny contexts will be available in LuckPerms. https://luckperms.net/wiki/Context
-      # Towny will supply for LuckPerms: townyperms' ranks contexts, as well as location-based contexts.
+      # 如果启用，LuckPerms中将提供Towny上下文。 https://luckperms.net/wiki/Context
+      # Towny将为LuckPerms提供：townyperms的等级上下文，以及基于位置的上下文。
       contexts: 'false'
   
-      # Configure what contexts to enable/disable here, contexts must be separated by a comma.
-      # Available contexts: towny:resident, towny:mayor, towny:king, towny:insidetown, towny:insideowntown, towny:insideownplot, towny:townrank
-      # towny:nationrank, towny:town, towny:nation
+      # 在此配置要启用/禁用的上下文，上下文必须用逗号分隔。
+      # 可用上下文：towny:resident、towny:mayor、towny:king、towny:insidetown、towny:insideowntown、towny:insideownplot、towny:townrank
+      # towny:nationrank、towny:town、towny:nation
       enabled_contexts: '*'
   
-    # If enabled, blocks that get regenerated by Towny, such as revert-on-unclaim and explosion regeneration will be logged with CoreProtect.
-    # Actions are logged with the `#towny` user, so Towny's actions can easily be undone using user:#towny.
+    # 如果启用，Towny重新生成的方块，如撤销-取消索赔和爆炸重新生成，将使用CoreProtect记录。
+    # 操作将使用`#towny`用户记录，因此可以轻松地使用user:#towny撤销Towny的操作。
     coreprotect_support: 'true'
   
     web_map:
   
-      # If enabled, players will be prompted to open a url when clicking on coordinates in towny status screens.
+      # 如果启用，玩家在状态屏幕上单击坐标时将提示打开url。
       enabled: 'false'
   
-      # The url that players will be prompted to open when clicking on a coordinate in a status screen.
-      # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
+      # 玩家单击状态屏幕上坐标时将提示打开的url。
+      # 有效的占位符为{world}、{x}和{y}，分别用于世界名称、x和y坐标。
       url: https://example.com/map/?worldname={world}&mapname=flat&zoom=5&x={x}&y=64&z={z}
   
   day_timer:
   
-    # The time for each "towny day", used for tax and upkeep collection and other daily timers.
-    # Default is 24 hours. Cannot be set for greater than 1 day, but can be set lower.
+    # 每个“towny day”的时间，用于税收和维护收集和其他每日计时器。
+    # 默认为24小时。不能设置大于1天，但可以设置为更低。
     day_interval: 1d
   
-    # The time each "day", when taxes will be collected.
-    # Only used when less than day_interval. Default is 12h (midday).
-    # If day_interval is set to something like 20m, the new_day_time is not used, day_interval will be used instead.
+    # 每个“day”的时间，税收将在此时收集。
+    # 仅在day_interval小于day_interval时使用。默认为12h（中午）。
+    # 如果day_interval设置为类似20m的值，则new_day_time不起作用，将使用day_interval。
     new_day_time: 12h
   
-    # If enabled (disabled by default), a Java Timer will be used for scheduling new days, which is more accurate than Towny's Bukkit timer task but uses an extra thread.
+    # 如果启用（默认禁用），将使用Java Timer来安排新的一天，这比Towny的Bukkit计时器任务更准确，但会使用额外的线程。
     uses_java_timer: 'false'
   
-    # Whether towns with no claimed townblocks should be deleted when the new day is run.
+    # 是否在运行新的一天时删除没有索赔城镇的城镇。
     delete_0_plot_towns: 'false'
   hour_timer:
   
-    # The number of minutes in each "day".
-    # Default is 60m.
+    # 每个“day”的分钟数。
+    # 默认为60m。
     hour_interval: 60m
-    # The time each "hour", when the hourly timer ticks.
-    # MUST be less than hour_interval. Default is 30m.
+    # 每个“hour”的时间，小时计时器会启动。
+    # 必须小于hour_interval。默认为30m。
     new_hour_time: 30m
-    # The interval of each "short" timer tick
-    # Default is 20s.
+    # “短”计时器的间隔
+    # 默认为20s。
     short_interval: 20s
   
-  # Lots of messages to tell you what's going on in the server with time taken for events.
+  # 服务器中发生的所有情况的大量消息，包括事件所花费的时间。
   debug_mode: 'false'
   
-  # Info tool for server admins to use to query in game blocks and entities.
+  # 服务器管理员使用的信息工具，用于查询游戏中的方块和实体。
   info_tool: BRICK
   
-  # Spams the player named in dev_name with all messages related to towny.
+  # 将与城镇有关的所有消息发送给名为dev_name的玩家。
   dev_mode:
     enable: 'false'
     dev_name: LlmDl
   
-  # If true this will cause the log to be wiped at every startup.
+  # 如果为true，则每次启动时都会清除日志。
   reset_log_on_boot: 'true'
   
-  # Sets the default size that /towny top commands display.
+  # 设置/towny top命令显示的默认大小。
   towny_top_size: '10'
   
-  # A blacklist used for validating town/nation names.
-  # Names must be seperated by a comma: name1,name2
+  # 用于验证城镇/国家名称的黑名单。
+  # 名称必须用逗号分隔：name1,name2
   name_blacklist: ''
   
   update_notifications:
   
-    # If enabled, players with the towny.admin.updatealerts permission will receive an update notification upon logging in.
+    # 如果启用，具有towny.admin.updatealerts权限的玩家将在登录时收到更新通知。
     alerts: 'true'
   
-    # If enabled, only full releases will trigger notifications if you are running a full release.
-    # This is ignored if the server is currently using a pre-release version.
+    # 如果启用，只有完整版本在运行时才会触发通知，如果您运行的是完整版本。
+    # 如果服务器当前使用的是预发布版本，则会忽略此设置。
     major_only: 'true'
   
   
