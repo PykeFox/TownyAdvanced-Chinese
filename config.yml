@@ -15,18 +15,18 @@ language:
   # sv-SE.yml, th-TH.yml, tl-PH.yml, tr-TR.yml, uk-UA.yml, vi-VN.yml, zh-CN.yml,
   # zh-TW.yml
   #
-  # 如果要用自己的翻译覆盖上述任何文件，则必须：
+  # 如果要用自己的翻译替代上述任何文件，您必须：
   # - 将文件从 towny\settings\lang\reference\ 文件夹复制到 lang\override\ 文件夹，并对该文件进行编辑。
-  # 如果要覆盖所有语言环境，例如更改颜色，您必须：
-  # - 将要覆盖的语言字符串复制到 towny\settings\lang\global.yml 文件中。
+  # 如果要覆盖全文，例如更改颜色，您必须：
+  # - 将要覆盖的内容复制到 towny\settings\lang\global.yml 文件中。
   #
-  # 您的玩家将通过更改其 Minecraft 客户端的语言环境来选择 Towny 显示给他们的语言环境。
+  # 玩家将通过更改其 Minecraft 客户端的语言来选择 Towny 显示给他们的语言。
   language: en-US.yml
   
-  # 您希望启用的语言环境。设置为 '*' 以使用所有可用的语言。
+  # 您希望启用的语言。设置为 '*' 以使用所有可用的语言。
   # 如果只想允许 4 种语言使用：en-US,ru-RU,es-ES,fr-FR
-  # 如果玩家的语言环境未启用或不可用，则将使用上面的语言。
-  # 由于兼容性原因，en-US 将始终被视为已启用。
+  # 如果玩家的语言未启用或不可用，则将使用上面的语言。
+  # 因为其兼容性，en-US 将始终被视为已启用。
   enabled_languages: '*'
   
   
@@ -37,8 +37,8 @@ language:
 #                                                          #
 # 关于权限节点和 TownyPerms 的完整列表和说明，                #
 # 请访问：https://git.io/JUBLd                              #
-# 许多管理员忽略阅读此 wiki 页面的开头段落，                  #
-# 最终提出了该 wiki 已经回答的问题！                         #
+# 许多人没看此 wiki 页面的开头段落，                  #
+# 然后提出了已经被回答过的问题！                         #
 #                                                          #
 ############################################################
 permissions: ''
@@ -287,14 +287,14 @@ town:
   default_neutral: 'false'
   
   # 新城镇的默认状态，（是否允许它们参与战争/战斗？）
-  # 此设置 Towny 内部不使用。它可供战争/战斗插件使用。
-  # 将此设置为 false 应意味着您的城镇不能参与由其他插件提供的战争。
+  # 此设置不在 Towny 内部使用。它可供战争/战斗插件使用。
+  # 将此设置为 false 则表明您的城镇不能参与其他插件的战争。
   default_allowed_to_war: 'true'
   
   # 默认城镇留言板
   default_board: /town set board [msg]
   
-  # 将此设置为 true 将自动使用城镇名称的前四个字符来设置城镇的标签。
+  # 将此设置为 true 则自动以城镇名称的前四个字符设置城镇的标签。
   set_tag_automatically: 'false'
   
   # 新城镇的默认税收设置。
@@ -309,18 +309,18 @@ town:
     # 新城镇的默认大使馆税收金额。
     embassy_tax: '0.0'
   
-    # 新城镇的地块税默认金额。
+    # 新城镇的默认地块税收金额。
     plot_tax: '0.0'
   
     # 如果玩家无法支付地块税，他们的地块是否会被出售？
-    # 当为 false 时，地块变为城镇土地，必须由城镇市长或工作人员设置为待售。
+    # 当为 false 时，地块变为公有土地，必须由城镇市长或工作人员设置为待售。
     does_non-payment_place_plot_for_sale: 'false'
   
     # 新城镇的默认税收百分比状态。True 意味着默认税收被视为百分比而不是固定金额。
     taxpercentage: 'true'
   
-    # 默认税收的最低要求税收金额，不会更改已经设置了税收的城镇。
-    # 不要忘记将默认税收设置为大于 0，否则新城镇仍将以零税收开始。
+    # 默认税收的最低要求金额，不会更改已经设置了税收的城镇。
+    # 不要忘记将默认税收设置为大于 0，否则新城镇仍将从零税收开始。
     # 当允许负税时，此设置无效。
     minimumtax: '0.0'
 
@@ -332,10 +332,10 @@ town:
   
 nation:
   
-  # 如果设置为 true，任何新创建的国家的生成点将被设置为公开。
+  # 如果设置为 true，任何新创建的国家的生成点将为公开状态。
   default_public: 'false'
   
-  # 如果设置为 true，任何新创建的国家将具有开放状态，任何城镇都可以加入而无需邀请。
+  # 如果设置为 true，任何新创建的国家将为开放状态，任何城镇都可以自由加入。
   default_open: 'false'
   
   # 默认国家留言板
@@ -353,7 +353,7 @@ nation:
     # 新国家的默认税收百分比状态。True 意味着默认税收被视为百分比而不是固定金额。
     taxpercentage: 'false'
   
-    # 默认税收的最低要求税收金额，不会更改已经设置了税收的国家。
+    # 默认税收的最低金额，已经设置了税收的国家不受影响。
     # 不要忘记将默认税收设置为大于 0，否则新国家仍将以零税收开始。
     # 当允许负税时，此设置无效。
     minimumtax: '0.0'
@@ -396,9 +396,9 @@ new_world_settings:
     # 您可以使用/townyworld toggle forcepvp命令调整现有世界的此设置。
     force_pvp_on: 'false'
   
-    # 新世界是否默认启用友好火？
-    # 不影响始终启用友好火的竞技场。
-    # 当为true时，同一城镇或国家的玩家将互相伤害。
+    # 新世界是否默认启用误伤？
+    # 不影响始终启用误伤的竞技场。
+    # 当为true时，同一城镇或国家的玩家被允许互相伤害。
     # 您可以使用/townyworld toggle friendlyfire命令调整现有世界的此设置。
     friendly_fire_enabled: 'false'
   
@@ -407,15 +407,15 @@ new_world_settings:
     war_allowed: 'true'
   
   mobs:
-    # 新世界是否默认启用世界怪物？
+    # 新世界是否默认能生成怪物？
     # 您可以使用/townyworld toggle worldmobs命令调整现有世界的此设置。
     world_monsters_on: 'true'
   
-    # 新世界是否默认启用荒野怪物？
+    # 新世界是否默认能在荒野生成怪物？
     # 您可以使用/townyworld toggle wildernessmobs命令调整现有世界的此设置。
     wilderness_monsters_on: 'true'
   
-    # 新世界是否默认强制启用城镇怪物？
+    # 新世界是否默认强制在城镇生成怪物？
     # 此设置覆盖城镇的设置。
     # 您可以使用/townyworld toggle townmobs命令调整现有世界的此设置。
     force_town_monsters_on: 'false'
@@ -426,12 +426,12 @@ new_world_settings:
     world_explosions_enabled: 'true'
   
     # 新世界是否默认强制启用爆炸？
-    # 此设置覆盖城镇的设置，阻止它们在城镇中关闭爆炸。
+    # 此设置覆盖城镇的设置，在城镇中始终启用爆炸。
     # 您可以使用/townyworld toggle forceexplosion命令调整现有世界的此设置。
     force_explosions_on: 'false'
   
   fire:
-    # 新世界是否允许默认点燃和传播火？
+    # 新世界是否默认允许火的点燃和传播？
     # 您可以使用/townyworld toggle fire命令调整现有世界的此设置。
     world_firespread_enabled: 'true'
   
@@ -440,7 +440,7 @@ new_world_settings:
     # 您可以使用/townyworld toggle forcefire命令调整现有世界的此设置。
     force_fire_on: 'false'
   
-  # 新世界是否默认阻止末影人拾取和放置方块？
+  # 新世界是否默认禁止末影人拾取和放置方块？
   enderman_protect: 'true'
   
   # 新世界是否默认禁用生物践踏作物？
@@ -455,14 +455,14 @@ new_world_settings:
       # 您可以使用/townyworld toggle unclaimblockdelete命令调整现有世界的此设置。
       enabled: 'true'
   
-      # 在地块被撤销时，这些物品将被删除
+      # 在地块被撤销时，这些物品将被清除
       unclaim_delete: BEDS,TORCHES,REDSTONE_WIRE,SIGNS,DOORS,PRESSURE_PLATES
   
     # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     entity_delete:
       enabled: 'false'
   
-      # 在地块被撤销时，这些实体将被删除。
+      # 在地块被撤销时，这些实体将被清除。
       # 有效的实体类型可以在此找到：https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
       unclaim_delete: end_crystal
   
@@ -472,34 +472,34 @@ new_world_settings:
       # 您可以使用/townyworld toggle plotcleardelete命令调整现有世界的此设置。
       enabled: 'true'
   
-      # 当市长使用/plot clear时，这些物品将被删除。
-      # 若要禁用删除，请用NONE替换当前条目。
+      # 当市长使用/plot clear时，这些物品将被清除。
+      # 若要禁用以上设置，请用NONE替换当前条目。
       mayor_plot_delete: SIGNS
   
     # 当检测到新世界时，此部分将作为默认设置应用于新世界。
     revert_on_unclaim:
       # *** 警告***
       # 如果启用此功能，任何变成未声明的城镇地块
-      # 将慢慢恢复到在地块被声明之前拍摄的快
+      # 将慢慢恢复到在地块被声明之前记录的状态
       #
       # 恢复只有当地块被声明时才能正常工作。
       #
       # 您可以使用/townyworld toggle revertunclaim命令调整现有世界的此设置。
       #
       # 与此配置部分的其他内容不同，速度设置不是
-      # 针对每个世界设置的。您设置的速度将用于所有世界。
+      # 针对单个世界设置的。您设置的速度将用于所有世界。
       #
       # 如果允许玩家在野外破坏/建造，则快照将
       # 包含在地块被声明之前进行的任何更改。
       enabled: 'true'
       speed: 1s
   
-      # 这些块类型不会被恢复到未声明时
-      # 或回滚爆炸功能。
+      # 这些方块类型不会因取消声明
+      # 或爆炸复原的特性而回滚。
       block_ignore: ORES,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,DIAMOND_BLOCK,EMERALD_BLOCK,NETHERITE_BLOCK,MOSSY_COBBLESTONE,TORCHES,SPAWNER,SIGNS,SHULKER_BOXES,BEACON,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,SKULLS,DRAGON_EGG,CRYING_OBSIDIAN,MOVING_PISTON
   
-      # 允许恢复的块列表。（如果为空，则所有块都将恢复）
-      # 此列表对于仅恢复“自然”块（如石头、草、树木等）非常有用，
+      # 允许恢复的方块列表。（如果为空，则所有方块都将恢复）
+      # 此列表对于仅恢复“自然”方块（如石头、草、树木等）有效，
       # 当您允许玩家在野外建造/破坏时很有用。
       # 与new_world_settings部分中的其他选项一样，此选项仅用作新世界的默认设置。
       # 在towny\data\worlds\WORLDNAME.txt文件中配置列表。
